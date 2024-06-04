@@ -4,6 +4,6 @@
 
 let clicks = 0;
 function updateCount() {
-    clicks++
-    document.getElementById("updateMSG").textContent = `You clicked the button ${clicks} times.`
+    clicks++;
+    document.getElementById("clickMSG").textContent = `You clicked the button ${clicks} times.`;
 }
