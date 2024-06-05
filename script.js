@@ -3,7 +3,12 @@
  */
 
 let clicks = 0;
-function updateCount() {
-    clicks++;
-    document.getElementById("clickMSG").textContent = `You clicked the button ${clicks} times.`;
+let clickButton = document.getElementById("clickButton");
+let output = document.getElementById("clickMSG");
+clickButton.addEventListener('click', doit())
+    
+
+function doit() {
+    clicks++
+    output.textContent = clicks;
 }
